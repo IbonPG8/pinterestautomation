@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidad</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f8fafc;
+      --panel: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #2563eb;
+    }
+    body {
+      margin: 0;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+    main {
+      max-width: 720px;
+      background: var(--panel);
+      border-radius: 16px;
+      padding: 28px 28px 32px;
+      box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+      border: 1px solid #e2e8f0;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 1.9rem;
+      letter-spacing: -0.3px;
+    }
+    p {
+      line-height: 1.6;
+      margin: 0 0 12px;
+    }
+    .muted { color: var(--muted); }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(37, 99, 235, 0.08);
+      color: var(--accent);
+      padding: 8px 12px;
+      border-radius: 12px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge">Automatización Pinterest</div>
+    <h1>Política de Privacidad</h1>
+    <p class="muted">Última actualización: <span id="today"></span></p>
+
+    <p><strong>Responsable:</strong> [Tu nombre o empresa].</p>
+    <p><strong>Contacto:</strong> [Tu correo electrónico].</p>
+    <p><strong>Finalidad:</strong> Publicar pines de forma automatizada usando datos introducidos por el usuario en una hoja de cálculo (títulos, descripciones, enlaces e imágenes de productos). No se recopilan datos personales de visitantes de Pinterest.</p>
+    <p><strong>Datos tratados:</strong> Únicamente los datos suministrados en la hoja: nombre del producto, descripción, imagen o URL de imagen, enlace de destino, precio y descuento. No se comparten con terceros.</p>
+    <p><strong>Base jurídica:</strong> Interés legítimo y prestación del servicio solicitado por el usuario.</p>
+    <p><strong>Conservación:</strong> No se almacenan más datos de los necesarios. Los pines se publican y no se genera un historial adicional fuera de Pinterest y la propia hoja de cálculo.</p>
+    <p><strong>Derechos:</strong> Puedes ejercitar acceso, rectificación o eliminación escribiendo a la dirección de contacto.</p>
+    <p><strong>Cookies:</strong> Este servicio no usa cookies propias; Pinterest gestiona sus cookies conforme a sus políticas.</p>
+  </main>
+  <script>
+    document.getElementById("today").textContent = new Date().toISOString().slice(0, 10);
+  </script>
+</body>
+</html>
