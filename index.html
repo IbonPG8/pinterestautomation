@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programador de Pines - Uso Propio</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: radial-gradient(circle at 20% 20%, #eef2ff 0, transparent 30%),
+             radial-gradient(circle at 80% 10%, #e0f2fe 0, transparent 26%),
+             #f8fafc;
+      --panel: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #2563eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      padding: 40px 16px 64px;
+    }
+    main {
+      width: min(960px, 100%);
+      background: var(--panel);
+      border-radius: 18px;
+      padding: 32px 32px 40px;
+      box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+      border: 1px solid #e2e8f0;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2.1rem;
+      letter-spacing: -0.3px;
+    }
+    p { line-height: 1.6; margin: 0 0 12px; }
+    .muted { color: var(--muted); }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(37, 99, 235, 0.08);
+      color: var(--accent);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      margin-bottom: 14px;
+      letter-spacing: 0.2px;
+    }
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 16px 18px;
+      background: #f8fafc;
+      margin: 12px 0;
+    }
+    ul { padding-left: 20px; margin: 0 0 12px; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="pill">Programador de Pines · Uso propio</div>
+    <h1>Publica Pines desde tu hoja de cálculo</h1>
+    <p class="muted">App personal para programar Pines con datos que yo mismo cargo: título, descripción, imagen y enlace.</p>
+
+    <div class="card">
+      <strong>Qué hace</strong>
+      <ul>
+        <li>Lee una pestaña de Google Sheets con los productos marcados para publicar.</li>
+        <li>Totalmente opt-in: solo se publica lo que marco manualmente con ✅.</li>
+        <li>Envía a Pinterest el título, descripción, enlace e imagen que yo proporciono.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <strong>Alcance y datos</strong>
+      <ul>
+        <li>Uso de una única cuenta (la mía); no gestiona cuentas de terceros sin consentimiento.</li>
+        <li>No almacena datos de Pinterest; solo envía el payload de creación de Pin.</li>
+        <li>Sin scraping ni acciones de crecimiento (seguir/comentar/guardar).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <strong>Contacto</strong>
+      <p>Responsable: [Tu nombre o empresa]<br>
+         Email: [Tu correo]</p>
+    </div>
+
+    <p><a href="./privacy.html">Política de privacidad</a></p>
+  </main>
+</body>
+</html>
